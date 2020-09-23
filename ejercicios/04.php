@@ -9,10 +9,11 @@
         define('size', 10);
         define('rowsize', 1);
         echo "<table border=2>";
+        
         $numeroMax = 10;
         $numAnterior1 = 0;
         $numAnterior2 = 1;
-        
+
         echo "Primeros " . $numeroMax .  " números de la sucesión de Fibonacci: ";
 
         for($row=1; $row<=rowsize; $row++){
