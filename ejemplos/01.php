@@ -6,6 +6,9 @@
   <title>Ejemplo</title>
 </head>
 <body>
-  <h1>Hola mundo</h1>
+  <h1>Hola mundo!!</h1>
+  <?php 
+  echo "¿Qué tal?";
+  ?>
 </body>
 </html>
