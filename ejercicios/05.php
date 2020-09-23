@@ -2,14 +2,14 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>ejercicio04</title>
+        <title>ejercicio05</title>
     </head>
     <body>
         <?php
         define('size', 10);
         define('rowsize', 1);
-        echo "<table border=2> ";
-        $numero = 193;
+        echo "<table style= width:100%; border=20px solid black>";
+        $numero = 200;
         $numeroPrimos = 0;
         echo "Divisores de " . $numero . ": ";
 
