@@ -7,15 +7,16 @@
     <body>
         <?php
         define('size', 10);
+        define('rowsize', 1);
         echo "<table border=2>";
-
-        for($row=1; $row<=size; $row++){
+        $divisor = 3;
+        for($row=1; $row<=rowsize; $row++){
             if ($row % 2 == 0)
             echo "<tr bgcolor = gainsboro>";
             else
             echo "<tr>";
             for ($column = 1; $column <= size; $column++) {
-                if($column%3==0){
+                if($column%$divisor==0){
                     echo "<td>", $column, "</td>";
                 }
                 
