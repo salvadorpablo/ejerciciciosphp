@@ -9,7 +9,7 @@
         define('size', 10);
         define('rowsize', 1);
         echo "<table style= width:100%; border=20px solid black>";
-        $numero = 200;
+        $numero = 193;
         $numeroPrimos = 0;
         echo "Divisores de " . $numero . ": ";
 
