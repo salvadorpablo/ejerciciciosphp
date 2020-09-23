@@ -10,6 +10,8 @@
         define('rowsize', 1);
         echo "<table border=2>";
         $divisor = 3;
+
+        echo "Divisores de " . $divisor . " del 1 al 10: ";
         for($row=1; $row<=rowsize; $row++){
             if ($row % 2 == 0)
             echo "<tr bgcolor = gainsboro>";

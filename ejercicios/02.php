@@ -13,7 +13,7 @@
     
     $number = 8;
     echo "Tabla del ", $number, ": ";
- 
+    
     for ($row = 1; $row <= rowSIZE; $row++) {
         if ($row % 2 == 0)
             echo "<tr bgcolor = gainsboro>";
