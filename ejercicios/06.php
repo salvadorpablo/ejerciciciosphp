@@ -28,7 +28,7 @@
 
         echo "Array con el quinteto y la posición: <br>";
         //imprimir indicando nombres y posicion del nombre en el array
-        foreach($arrayEquipo as $element){
+        foreach($arrayEquipo as $position=>$element){
             echo "<li>" . $position . " " . $element . "</li>";
         }
 
