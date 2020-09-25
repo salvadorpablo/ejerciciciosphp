@@ -6,9 +6,10 @@
   <title>Ejemplo</title>
 </head>
 <body>
-  <h1>Hola mundo!!</h1>
-  <?php 
-  echo "¿Qué tal?";
-  ?>
+  <h1>
+    <?php 
+    $saludo = "Hola Mundo";
+    echo $saludo; 
+    ?></h1>
 </body>
 </html>
