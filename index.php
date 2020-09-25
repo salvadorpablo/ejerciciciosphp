@@ -83,7 +83,7 @@
     <a href="/ejemplos/<?php printf("%02d", ++$ejemplo);  ?>.php" target="_blank">Ejemplo <?php printf("%02d", $ejemplo);  ?></a>
     Uso de arrays ordenadas. Añadir elementos dinámicamente.
     </li>
-    <ul>
+      <ul>
         <li>
           <a href="/ejercicios/<?php printf("%02d", ++$ejercicio);  ?>.php" target="_blank">Ejercicio <?php printf("%02d", $ejercicio);  ?></a>
           Repitite el ejercicio 6 añadiendo los elementos al array de uno en uno.
@@ -97,6 +97,13 @@
     <a href="/ejemplos/<?php printf("%02d", ++$ejemplo);  ?>.php" target="_blank">Ejemplo <?php printf("%02d", $ejemplo);  ?></a>
     Uso de arrays asociativos. 
     </li>
+    <ul>
+        <li>
+          <a href="/ejercicios/<?php printf("%02d", ++$ejercicio);  ?>.php" target="_blank">Ejercicio <?php printf("%02d", $ejercicio);  ?></a>
+          Repitite el ejercicio 6. En esta ocasión debes usar un array asociativo. Cada posición se llamará correctamente: base, escolta, alero, alapivot, pivot.
+          Muestra el resultado con un "foreach (clave => valor)"
+        </li>
+      </ul>
     <li>
     <a href="/ejemplos/<?php printf("%02d", ++$ejemplo);  ?>.php" target="_blank">Ejemplo <?php printf("%02d", $ejemplo);  ?></a>
     Array de más de una dimensión
