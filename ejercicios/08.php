@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>Ejercicio 08>
+        <title>Ejercicio 08></title>
     </head>
     <body>
         <?php
@@ -18,14 +18,14 @@
         //imprimir indicando sólo los nombres:
         echo "Array: <br>";
         foreach ($arrayEquipo as $element){
-            echo "<ul>" . $element . "</ul> ";
+            echo "<ul><li>" . $element . "</li></ul> ";
         }
         echo '<br><br>';
 
         echo "Array con el quinteto y la posición: <br>";
         //imprimir indicando nombres y posicion del nombre en el array
         foreach($arrayEquipo as $position=>$element){
-            echo "<li>" . $position . " " . $element . "</li>";
+            echo "<ul>" . $position . " " . $element . "</ul>";
         }
 
         ?>
