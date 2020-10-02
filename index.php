@@ -177,6 +177,18 @@
     <a href="/ejemplos/<?php printf("%02d", ++$ejemplo);  ?>/" target="_blank">Ejemplo <?php printf("%02d", $ejemplo);  ?></a>
       Mi primera clase.
     </li>
+    <li>
+    <a href="/ejemplos/<?php printf("%02d", ++$ejemplo);  ?>/" target="_blank">Ejemplo <?php printf("%02d", $ejemplo);  ?></a>
+      Una clase como aplicación (I)
+    </li>
+    <li>
+    <a href="/ejemplos/<?php printf("%02d", ++$ejemplo);  ?>/" target="_blank">Ejemplo <?php printf("%02d", $ejemplo);  ?></a>
+      Una clase como aplicación (II)
+    </li>
+    <li>
+    <a href="/ejemplos/<?php printf("%02d", ++$ejemplo);  ?>/" target="_blank">Ejemplo <?php printf("%02d", $ejemplo);  ?></a>
+      Una clase como aplicación (III)
+    </li>
   </ol>
 
 </body>
