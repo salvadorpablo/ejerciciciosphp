@@ -13,6 +13,7 @@
   ?>
   
   <h2>Ejemplos</h2>
+  <h3>Programar con scripts</h3>
   <ol>
     <li>
     <a href="/ejemplos/<?php printf("%02d", ++$ejemplo);  ?>.php" target="_blank">Ejemplo <?php printf("%02d", $ejemplo);  ?></a>
@@ -170,6 +171,11 @@
     <li>
     <a href="/ejemplos/<?php printf("%02d", ++$ejemplo);  ?>.php" target="_blank">Ejemplo <?php printf("%02d", $ejemplo);  ?></a>
     Uso de funciones
+    </li>
+    <h3>POO</h3>
+    <li>
+    <a href="/ejemplos/<?php printf("%02d", ++$ejemplo);  ?>/" target="_blank">Ejemplo <?php printf("%02d", $ejemplo);  ?></a>
+      Mi primera clase.
     </li>
   </ol>
 

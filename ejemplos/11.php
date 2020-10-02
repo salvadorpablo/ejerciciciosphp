@@ -25,8 +25,8 @@
 
         
         Sexo: <br>
-        <input type="radio" name="sexo" value="male" checked> Varón <br>
-        <input type="radio" name="sexo" value="female"> Mujer<br>
+        <input type="radio" name="sexo" value="male" > Varón <br>
+        <input type="radio" name="sexo" value="female" checked> Mujer<br>
 
         Elige un color:  <br>
         <select name="color">
@@ -34,8 +34,8 @@
            <option>rojo</option>
            <option>azul</option>
            <option>verde</option>
-           <option>amarillo</option>
-           <option selected>blanco</option>
+           <option selected>amarillo</option>
+           <option >blanco</option>
          </optgroup>
        </select>
 
@@ -55,7 +55,7 @@
         múltiple como un array. -->
         <input type="checkbox" name="aficiones[]" value="deporte"> Hacer deporte <br>
         <input type="checkbox" name="aficiones[]" value="musica"> Escuchar música  <br>     
-        <input type="checkbox" name="aficiones[]" value="musica"> Lectura  <br>      
+        <input type="checkbox" name="aficiones[]" value="lectura"> Lectura  <br>      
         <input type="checkbox" name="aficiones[]" value="cine"> Ir al cine  <br>
         <input type="submit" value="enviar">
     </form>
