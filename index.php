@@ -189,6 +189,10 @@
     <a href="/ejemplos/<?php printf("%02d", ++$ejemplo);  ?>/" target="_blank">Ejemplo <?php printf("%02d", $ejemplo);  ?></a>
       Una clase como aplicación (III)
     </li>
+    <li>
+    <a href="/ejemplos/<?php printf("%02d", ++$ejemplo);  ?>/" target="_blank">Ejemplo <?php printf("%02d", $ejemplo);  ?></a>
+      Cookies
+    </li>
   </ol>
 
 </body>
