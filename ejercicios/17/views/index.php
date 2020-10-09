@@ -5,6 +5,10 @@
   <title><?= $this->name?></title>
 </head>
 <body>
+<?php
+  require('views/header.php');
+  ?>
+
   <h1><?= $this->name?></h1>
   <?php         
   

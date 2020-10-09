@@ -21,7 +21,7 @@ class App{
 
     public function index()
   {
-    // echo "Estamos en el index<br>";
+    echo "<hr>Ejercicio 17<hr>";
     include('views/index.php');
   }
 
@@ -57,21 +57,29 @@ class App{
     }
 
     public function factoriales(){
+      //Debe mostar los factoriales desde 1 hasta n de tal 
+      //manera que el último término sea el más próximo cercano al millón.
 
         $this->name = "Factoriales";
-        $numFac = 0;
-        while($numFac < 1000000){
-            foreach($this->serieNumerica as $elemento){
-                $numFac = $elemento;
-            }
-            
+        $numFac = 1;
+        $resultado = 0;
+        $contador=1;
+
+        while($resultado<1000000){
+        for($i=$contador; $i>=1; $i--){
+          $resultado=$resultado*$i;
+          $contador++;
+          $this->serieNumerica[] = $resultado;
         }
+      }
+          
+        
 
         include('views/index.php');
     }
 
     public function primos(){
-
+      
     }
 }
 ?>
