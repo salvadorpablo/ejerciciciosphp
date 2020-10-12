@@ -21,7 +21,7 @@ class App{
 
     public function index()
   {
-    // echo "Estamos en el index<br>";
+    echo "Estamos en el index<br>";
     include('views/index.php');
   }
 
