@@ -36,4 +36,7 @@
     
 </body>
 </html>
+<<<<<<< HEAD
 hola mundo
+=======
+>>>>>>> 096a7a02ce230254026e2cf1c7978bb8fb01389b

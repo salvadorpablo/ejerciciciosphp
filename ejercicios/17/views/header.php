@@ -1,5 +1,9 @@
 <header>
-    <li><a href="/ejercicios/17/">Volver</li>
-    <li><a href="/ejercicios/17/?method=fibonacci">Fibonacci</li>
-    <li><a href="/ejercicios/17/?method=potencias2">Potencias de 2</li>
+  <ul>
+    <li><a href="/ejercicios/17/">Index</a></li>
+    <li><a href="/ejercicios/17/?method=fibonacci">Fibonacci</a></li>
+    <li><a href="/ejercicios/17/?method=potencias2">Potencias 2</a></li>
+    <li><a href="/ejercicios/17/?method=factoriales">Factoriales</a></li>
+    <li><a href="/ejercicios/17/?method=primos">Primos</a></li>
+  </ul>
 </header>

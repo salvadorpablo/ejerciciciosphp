@@ -6,6 +6,11 @@
   <link rel="stylesheet" type="text/css" href="css/default.css">
 </head>
 <body>
+<?php
+  require('views/header.php');
+  ?>
+
+  <h1><?= $this->name?></h1>
   <?php         
   require('views/header.php');
   ?>
