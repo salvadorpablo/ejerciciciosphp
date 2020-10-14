@@ -11,16 +11,17 @@
   ?>
 
   <h1><?= $this->name?></h1>
-  <?php         
-  require('views/header.php');
-  ?>
-  <h1><?= $this->name?></h1>
-  <h2>Resultado: <br></h2>
+ 
   <?php
-  foreach($this->serieNumerica as $elemento){
-            echo "<ul><li>" . $elemento . "</li></ul>";
-        }
-        
+  if(isset($this->name)){
+    echo '<h2>Resultado: <br></h2>';
+  
+    foreach($this->serieNumerica as $elemento){
+              echo "<ul><li>" . $elemento . "</li></ul>";
+          }
+          
+  }
+ 
         ?>
   
 </body>

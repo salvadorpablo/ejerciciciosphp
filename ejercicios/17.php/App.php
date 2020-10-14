@@ -57,29 +57,55 @@ class App{
     }
 
     public function factoriales(){
-      //Debe mostar los factoriales desde 1 hasta n de tal 
-      //manera que el último término sea el más próximo cercano al millón.
 
-        $this->name = "Factoriales";
-        $numFac = 1;
-        $resultado = 0;
-        $contador=1;
+      $this->name = "Factoriales";
+      $resultado = 1;
+      $numero = 1;
+      
+      while($resultado<=1000000){
+        $resultado= 1;
+        for ($i=1; $i <= $numero; $i++) { 
+        $resultado = $resultado * $i;
+        
+        }
 
-        while($resultado<1000000){
-        for($i=$contador; $i>=1; $i--){
-          $resultado=$resultado*$i;
-          $contador++;
+        if($resultado <= 1000000){
           $this->serieNumerica[] = $resultado;
+          $numero += 1;
         }
       }
-          
-        
 
-        include('views/index.php');
+      include('views/index.php');
     }
+    
 
     public function primos(){
-      
+
+      $this->name = "Primos";
+      for($i=1; $i<=10000; $i++){
+        if($this->esPrimo($i)){
+          $this->serieNumerica[] = $i;
+        }
+      }
+      include('views/index.php');
     }
+
+    private function esPrimo($numero){
+      
+      if ($numero==2 || $numero==3 || $numero==5 || $numero==7){
+        return True;
+      }else{
+        if ($numero%2!=0){
+          for ($i = 3; $i<=sqrt($numero); $i += 2){
+            if($numero%$i==0){
+              return False;
+            }
+          }
+          return True;
+        }
+      }
+      return False;
+    }
+    
 }
 ?>
