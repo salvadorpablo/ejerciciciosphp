@@ -12,7 +12,7 @@
 
   <h1>Login</h1>
 
-  <form method="post" action="/ejercicios/18.php/?method=auth">
+  <form method="post" action="/ejercicios/18/?method=auth">
     <label>Usuario</label><input type="text" name="user"> <br>
     <label>Contraseña</label><input type="password" name="password"> <br>
     <input type="submit" value="Enviar"> 

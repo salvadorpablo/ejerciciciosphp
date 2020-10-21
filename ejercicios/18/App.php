@@ -19,7 +19,7 @@ class App
       include_once('views/form.php');
 
     }else{
-      header('Location: /ejercicios/18.php/?method=home');
+      header('Location: /ejercicios/18/?method=home');
     }
   }
 
@@ -30,7 +30,7 @@ class App
 
 
       
-      header('Location: /ejercicios/18.php/?method=login');
+      header('Location: /ejercicios/18/?method=login');
       }
       
     
@@ -52,6 +52,6 @@ class App
 
    
 
-    header('Location: /ejercicios/18.php/?method=login');
+    header('Location: /ejercicios/18/?method=login');
 }
   }
