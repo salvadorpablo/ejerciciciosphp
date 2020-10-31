@@ -7,7 +7,7 @@
 </head>
 <body>
     <h1>Formulario de login</h1><hr>
-    <form action="/ejercicios/20/?method=auth" method="post">
+    <form action="/ejercicios/21/?method=auth" method="post">
     <label for="">Nombre de usuario<input type="text" value="" name="name"><br>
     <label for="">Contraseña<input type="password" value="" name="password"><br>
     <input type="submit" value="Ingresar">

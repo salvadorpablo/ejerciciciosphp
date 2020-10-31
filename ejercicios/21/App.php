@@ -17,7 +17,9 @@ class App{
 
 
 public function login(){
-    
+    if(isset($_SESSION['name'])){
+        header('Location: ?method=home');
+    };
     include('views/login.php');
 }        
  
@@ -40,7 +42,7 @@ public function new(){
     $_SESSION['deseos'][] = $_POST['new'];
     }
     $deseos = $_SESSION['deseos'];
-    header('Location: /ejercicios/20?method=home');
+    header('Location: /ejercicios/21?method=home');
 
 }
 
@@ -56,5 +58,23 @@ public function home(){
     }
     
     include('views/index.php');
+}
+
+public function delete(){
+
+    $id = $_GET['id'];
+    
+    unset($_SESSION['deseos'][$id]);
+
+    header('Location: /ejercicios/21?method=home');
+}
+
+public function empty(){
+    unset($_SESSION['deseos']);
+    header('Location: /ejercicios/21?method=home');
+}
+public function close(){
+    session_destroy();
+    header('Location: /ejercicios/21?method=login');
 }
 }

@@ -1,5 +1,4 @@
 <?php
-require_once("Usuario.php");
 class App 
 {
     public function run()
@@ -14,44 +13,43 @@ class App
   }
 
   public function login(){
-
-    if(empty($_COOKIE)){
-      include_once('views/form.php');
-
-    }else{
-      header('Location: /ejercicios/18/?method=home');
+    if(isset($_COOKIE['usuario']) && isset($_COOKIE['password'])){
+      header('Location: ?method=home');
+      return;
     }
+
+    include('views/form.php');
   }
 
   public function auth(){
+    if(empty($_POST['user']) || empty($_POST['password'])){
+      header('Location: ?method=login');
+      return;
+    }
 
-      $usuario = new Usuario($_POST['user'], $_POST['password']);
-      setcookie("Usuario", serialize($usuario), time() + 3600);
+    $nombre=$_POST['user'];
+    $password=$_POST['password'];
 
+    setcookie('usuario', $nombre, time()+3600);
+    setcookie('password', $password, time()+3600);
 
-      
-      header('Location: /ejercicios/18/?method=login');
-      }
-      
-    
+    header('Location: ?method=home');
+  }
+
   public function home(){
-    $usuario = new Usuario($_POST['user'], $_POST['password']);
-    echo "<hr><h1>Hola " . $usuario->getNombre() . "</h1>"; //preguntar por qué esto no va
-    echo $usuario->getNombre();
-    echo "<hr><a href=?method=logout>Cerrar sesión</a>";
-    echo "<br>";
-    var_dump($_COOKIE);
 
-    
+    if(!isset($_COOKIE['usuario']) || !isset($_COOKIE['password'])){
+      header('Location: ?method=login');
+      return;
+    }
+    include('views/home.php');
   }
 
   public function logout(){
 
-    $usuario = new Usuario($_POST['user'], $_POST['password']);
-    setcookie("Usuario", serialize($usuario), time()-1);
+    setcookie('usuario', '', 1);
+    setcookie('password', '', 1);
 
-   
-
-    header('Location: /ejercicios/18/?method=login');
-}
+    header('Location: ?method=login');
+  }
   }
